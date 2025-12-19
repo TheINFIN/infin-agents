@@ -18,16 +18,31 @@ claude
 /debug "TypeError: Cannot read property..."
 ```
 
-### Import into Another Project
+### Install in Another Project
 
-**Option 1: Symlink (recommended)**
+**Option 1: One-line install (recommended)**
+```bash
+curl -fsSL https://raw.githubusercontent.com/TheINFIN/infin-agents/main/install.sh | bash
+```
+
+This adds infin-agents as a git submodule and symlinks the commands.
+
+**Option 2: Manual submodule**
+```bash
+git submodule add https://github.com/TheINFIN/infin-agents.git .infin-agents
+mkdir -p .claude
+ln -s ../.infin-agents/.claude/commands .claude/commands
+```
+
+**Option 3: Symlink (if you have a local clone)**
 ```bash
 ln -s /path/to/infin-agents/.claude/commands /your/project/.claude/commands
 ```
 
-**Option 2: Copy**
+**Updating agents:**
 ```bash
-cp -r /path/to/infin-agents/.claude/commands /your/project/.claude/
+cd .infin-agents && git pull origin main && cd ..
+git add .infin-agents && git commit -m "Update infin-agents"
 ```
 
 ### Use in Claude Projects (claude.ai)
@@ -68,6 +83,7 @@ infin-agents/
 │   └── marketing/         # Multi-agent marketing workflows
 ├── scripts/
 │   └── build.js           # Build script for combined files
+├── install.sh             # Installer for other projects
 ├── agents.md              # All agents combined (auto-generated)
 ├── workflows.md           # All workflows combined (auto-generated)
 ├── CLAUDE.md              # Auto-loaded by Claude Code
