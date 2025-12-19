@@ -30,12 +30,39 @@ ln -s /path/to/infin-agents/.claude/commands /your/project/.claude/commands
 cp -r /path/to/infin-agents/.claude/commands /your/project/.claude/
 ```
 
+### Install as npm Package
+
+```bash
+npm install @theinfin/agents
+```
+
+Then use in your code:
+
+```javascript
+const { agents, workflows, getAll } = require('@theinfin/agents');
+
+// Get a specific agent
+console.log(agents.development.architect);
+
+// Get a specific workflow
+console.log(workflows.development.featureImplementation);
+
+// Get everything combined (for Claude Projects import)
+console.log(getAll());
+
+// List available agents
+const { listAgents } = require('@theinfin/agents');
+console.log(listAgents());
+// { development: ['architect', 'code-reviewer', ...], marketing: [...] }
+```
+
 ### Use in Claude Projects (claude.ai)
 
 1. Go to [claude.ai/projects](https://claude.ai/projects)
 2. Create a new project
 3. Upload agent files from `agents/` as Project Knowledge
-4. Reference agents in conversations: *"Act as the Code Reviewer agent and review this file"*
+4. Or use the npm package to get combined content programmatically
+5. Reference agents in conversations: *"Act as the Code Reviewer agent and review this file"*
 
 ## Available Commands
 
