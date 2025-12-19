@@ -1,0 +1,16 @@
+{
+  "name": "infin-agents",
+  "version": "1.0.0",
+  "description": "Reusable AI agents and workflows for Claude Code and Claude Projects",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "prepare": "git config core.hooksPath .githooks"
+  },
+  "keywords": [
+    "claude",
+    "ai-agents",
+    "workflows",
+    "claude-code"
+  ],
+  "license": "MIT"
+}

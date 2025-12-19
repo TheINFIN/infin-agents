@@ -1,0 +1,23 @@
+#!/bin/sh
+#
+# Pre-commit hook for INFIN Agents
+# Automatically rebuilds agents.md and workflows.md when source files change
+#
+
+# Check if any agent or workflow files are staged
+AGENTS_CHANGED=$(git diff --cached --name-only | grep -E '^agents/.*\.md$' || true)
+WORKFLOWS_CHANGED=$(git diff --cached --name-only | grep -E '^workflows/.*\.md$' || true)
+
+if [ -n "$AGENTS_CHANGED" ] || [ -n "$WORKFLOWS_CHANGED" ]; then
+    echo "📦 Agent or workflow files changed, rebuilding combined files..."
+
+    # Run the build script
+    node scripts/build.js
+
+    # Stage the updated combined files
+    git add agents.md workflows.md
+
+    echo "✅ Combined files updated and staged"
+fi
+
+exit 0
