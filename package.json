@@ -1,38 +1,16 @@
 {
-  "name": "@theinfin/agents",
+  "name": "infin-agents",
   "version": "1.0.0",
   "description": "Reusable AI agents and workflows for Claude Code and Claude Projects",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "agents/",
-    "workflows/",
-    "agents.md",
-    "workflows.md"
-  ],
   "scripts": {
     "build": "node scripts/build.js",
-    "prepare": "git config core.hooksPath .githooks",
-    "prepublishOnly": "npm run build"
+    "prepare": "git config core.hooksPath .githooks"
   },
   "keywords": [
     "claude",
     "ai-agents",
     "workflows",
-    "claude-code",
-    "claude-projects",
-    "anthropic"
+    "claude-code"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheINFIN/infin-agents.git"
-  },
-  "homepage": "https://github.com/TheINFIN/infin-agents#readme",
-  "bugs": {
-    "url": "https://github.com/TheINFIN/infin-agents/issues"
-  },
-  "author": "TheINFIN",
   "license": "MIT"
 }
