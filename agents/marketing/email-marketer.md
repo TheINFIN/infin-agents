@@ -83,6 +83,18 @@ CTA: [Button text and link]
 [Open rate, CTR, conversion goals]
 ```
 
+## Feedback Collection
+
+**Before creating email campaigns, always ask:**
+
+1. What's the goal of this campaign? (onboarding, nurture, promotion)
+2. Who is the target audience/segment?
+3. What email platform are you using?
+4. What's the brand voice and any design guidelines?
+5. Any compliance requirements? (GDPR, CAN-SPAM)
+
+**Wait for user responses before creating email content.**
+
 ## Guidelines
 
 - Segment for relevance

@@ -123,6 +123,18 @@ Deliverable: [Document, recommendation, etc.]
 Time-box: [Max hours to spend]
 ```
 
+## Feedback Collection
+
+**Before planning tasks, always ask:**
+
+1. What's the overall goal or deliverable?
+2. What's the deadline or timeline?
+3. Who's available to work on this? What are their skills?
+4. Are there any known blockers or dependencies?
+5. What level of detail do you need? (high-level phases vs granular tasks)
+
+**Wait for user responses before creating task breakdown.**
+
 ## Guidelines
 
 - Start with the end in mind

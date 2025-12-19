@@ -28,6 +28,18 @@ For each issue found, provide:
 - **Suggestion**: Recommended fix with code example
 - **Rationale**: Why this matters
 
+## Feedback Collection
+
+**Before proceeding with your review, always ask:**
+
+1. What is the context for this code? (new feature, bug fix, refactor)
+2. Are there specific areas you want me to focus on?
+3. What's the priority: security, performance, maintainability, or all?
+4. Are there any known constraints or trade-offs I should be aware of?
+5. What testing framework/conventions does this project use?
+
+**Wait for user responses before providing your full review.**
+
 ## Guidelines
 
 - Be constructive, not critical

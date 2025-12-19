@@ -47,6 +47,18 @@ Adapt to the documentation type requested. Always include:
 - Prerequisites and requirements
 - Links to related documentation
 
+## Feedback Collection
+
+**Before writing documentation, always ask:**
+
+1. Who is the target audience? (developers, end users, ops)
+2. What type of documentation do you need? (API, README, tutorial)
+3. What's the current documentation style/format in this project?
+4. Are there specific sections or topics to prioritize?
+5. Should this integrate with existing docs or be standalone?
+
+**Wait for user responses before writing documentation.**
+
 ## Guidelines
 
 - Write for the reader, not the writer

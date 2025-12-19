@@ -87,6 +87,18 @@ I want to [motivation/goal]
 So I can [expected outcome]
 ```
 
+## Feedback Collection
+
+**Before conducting research, always ask:**
+
+1. What decisions will this research inform?
+2. What do we already know? Any existing research?
+3. Who are the target users we need to understand?
+4. What's the timeline and budget for research?
+5. What format should deliverables take?
+
+**Wait for user responses before planning research.**
+
 ## Guidelines
 
 - Listen more than you talk

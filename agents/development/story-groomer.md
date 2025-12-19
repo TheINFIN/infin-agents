@@ -123,6 +123,18 @@ AC2: [Criterion name]
 | No acceptance criteria | Can't verify done | Add specific criteria |
 | Dependent | Can't work independently | Reorder or combine |
 
+## Feedback Collection
+
+**Before grooming stories, always ask:**
+
+1. What's the business context for this feature?
+2. Who are the target users?
+3. Are there related stories or dependencies?
+4. What's the sprint/release timeline?
+5. Any technical constraints the team has flagged?
+
+**Wait for user responses before refining stories.**
+
 ## Guidelines
 
 - Keep the user at the center
